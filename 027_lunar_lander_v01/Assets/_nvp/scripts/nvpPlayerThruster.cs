@@ -7,7 +7,7 @@ public class nvpPlayerThruster : MonoBehaviour {
 
 	// +++ public fields ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++    
 	// +++ editor fields ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-	[SerializeField] private float _forceFactor = 1f;
+	[SerializeField] private Vector2 _forceFactor;
 	[SerializeField] private Vector3 _forceVector;
 	// +++ private fields +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     private Rigidbody _rb;
@@ -23,9 +23,8 @@ public class nvpPlayerThruster : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		_forceVector.x = Input.GetAxis("Horizontal");
-		_forceVector.y = Input.GetAxis("Vertical");
-		_forceVector *= _forceFactor;
+		_forceVector.x = Input.GetAxis("Horizontal") * _forceFactor.x;
+		_forceVector.y = Input.GetAxis("Vertical") * _forceFactor.y;
 		_rb.AddForce(_forceVector, ForceMode.Force);
 	}
     
