@@ -8,7 +8,9 @@ namespace newvisionsproject.managers.events
 
     public enum GameEvents
     {
-        OnVelocityChanged
+        OnVelocityChanged,
+        OnPlayerDestroyed,
+        OnSaveLanding
     }
 
     public class nvpEventManager : MonoBehaviour
