@@ -18,5 +18,3 @@ Ebenfalls wird hier das Konzept von Plattformen als Landeziele evaluiert.
 ### Lunar Lander V2
 Version 2 dient der Einarbeitung in das Thema spawnen von PlayerEntitäten und wie man diese in einem lokalen Multiplayer-Spiel den jeweiligen Spielern zuordnen kann. Die Erkenntnisse hieraus dienen als Grundlage dafür, aus einem lokalen Multiplayerspiel ein Multiplayerspiel zu entwickeln, welches die Prozessgrenzen eines lokalen Spiels überschreitet.
 
----
-
